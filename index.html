@@ -3,9 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ahorcado</title>
+	<script src="js/ahorcado.js"></script>
+	<style>
+		body
+		{
+			text-align: center;			
+		}
+		h2
+		{
+			font-size: 30px;
+			margin: 2px;			
+		}
+		h2 p{			
+			margin: -10px 0 -10px 0;	
+		}	
+
+	</style>
 </head>
 <body>
-	
-	<script src="js/ahorcado.js"></script>
+	<p>
+		Elige una letra:
+		<input type="text" id="letra"/>
+		<input id="btn_intentar" type="button" value="OK"/>
+	</p>
+	<h2 id="hdos">
+		<p id="mensaje"></p>
+		<p id="pista"></p>
+		<input id="btn_nuevo" type="button" value="Otra palabra"/>	
+	</h2>	
+	<canvas id="base" width='600' height='714'></canvas>
+<script>inicio()</script>	
 </body>
 </html>
